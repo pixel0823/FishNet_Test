@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "NetTest.sln"
+    "dotnet.defaultSolution": "FishNet_Test.sln"
 }

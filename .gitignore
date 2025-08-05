@@ -115,3 +115,6 @@ crashlytics-build.properties
 # .DS_Store: macOS에서 자동 생성되는 파일 (버전 관리 불필요)
 .DS_Store
 Library/
+Temp/UnityLockfile
+Temp/FSTimeGet-663f884d612f04d68a73d5307035ed1f
+Temp/workerlic
