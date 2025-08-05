@@ -34,6 +34,6 @@ public class FloatingCrew : MonoBehaviour
     void Update()
     {
         transform.position += direction * floatingSpeed * Time.deltaTime;
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, 0f, rotateSpeed * Time.deltaTime));
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, 0f, rotateSpeed));
     }
 }

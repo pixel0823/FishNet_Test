@@ -11,7 +11,7 @@ public class CrewFloater : MonoBehaviour
 
     private bool[] crewStates = new bool[12];
     private float timer = 0.5f;
-    private float distance = 11f;
+    private float distance = 8f;
 
 
     // Start is called before the first frame update
@@ -42,10 +42,10 @@ public class CrewFloater : MonoBehaviour
             crewStates[(int)playerColor] = true;
 
             float angle = Random.Range(0f, 360f);
-            Vector3 spawnPos = new Vector3(Mathf.Sin(angle), Mathf.Cos(angle), 0f) * distance;
+            Vector3 spawnPos = new Vector3(Mathf.Sin(angle), Mathf.Cos(angle), 0f) * dist;
             Vector3 direction = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
-            float floatingSpeed = Random.Range(1f, 4f);
-            float rotateSpeed = Random.Range(-3f, 3f);
+            float floatingSpeed = Random.Range(1f, 2f);
+            float rotateSpeed = Random.Range(-1f, 0.2f);
 
             var cew = Instantiate(prefab, spawnPos, Quaternion.identity).GetComponent<FloatingCrew>();
             cew.SetFloatingCrew(sprites[Random.Range(0, sprites.Count)], playerColor, direction, floatingSpeed, rotateSpeed, Random.Range(0.5f, 1f));
